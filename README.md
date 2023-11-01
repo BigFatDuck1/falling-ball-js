@@ -59,7 +59,7 @@ the ball falls to the "floor"._
     }
     ```
 
-7. There is a bug: because the :basketball: changes to a :football: on transition end through `"transitionend"` event listener, it also turns into a :football: when the `.fall` class is removed and the ball goes back upwards i.e. when the user scrolls upwards. This is solved by changing the ball to a :basketball: when the user scrolls up:
+7. There is a bug: because the :basketball: changes to a :soccer: on transition end through `"transitionend"` event listener, it also turns into a :soccer: when the `.fall` class is removed and the ball goes back upwards i.e. when the user scrolls upwards. This is solved by changing the ball to a :basketball: when the user scrolls up:
 
     ```js
     if (scroll_top < max_scrollTop) {
