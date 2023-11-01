@@ -5,6 +5,7 @@ document.addEventListener('scroll', function() {
     //scrollTop is the difference between top of content and top of container
     //i.e. the gap between what cannot be seen and the height of the viewport
     let scroll_top = Math.floor(document.documentElement.scrollTop);
+    console.log(scroll_top);
     //Viewport height
     let viewport_height = document.querySelector("html").clientHeight;
     //Content height
