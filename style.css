@@ -19,7 +19,7 @@
 .ball {
     position: sticky;
     top: 100px;
-    height: 20px;
+    height: 0px;
     /* ! Change animation properties here! */
     transition: top 2s ease-out;
 }
