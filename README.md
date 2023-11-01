@@ -16,7 +16,7 @@ the ball falls to the "floor"._
 
 4. When has scrolling reached the bottom of the page? This is achieved by three DOM elements: `scrollTop`, `clientHeight`, and `scrollHeight`.
 
-    -`scrollTop` is the difference between the top of the container and the top of the element _inside_ the container. When no scrolling has happened yet, `scrollTop = 0` because the top of the container coincides (occupies the same position) as the top of the element inside the container. Subsequent scrolling changes `scrollTop` to equal whatever the distance is between the top of the element (which is now unseen, because it is above the viewport) and the top of the container.
+    * `scrollTop` is the difference between the top of the container and the top of the element _inside_ the container. When no scrolling has happened yet, `scrollTop = 0` because the top of the container coincides (occupies the same position) as the top of the element inside the container. Subsequent scrolling changes `scrollTop` to equal whatever the distance is between the top of the element (which is now unseen, because it is above the viewport) and the top of the container.
 
     In this case, the container is set to `document.documentElement`, which just so happens is equal to the root element as well as the viewport:\
 
@@ -26,13 +26,13 @@ the ball falls to the "floor"._
 
     Therefore, `scroll_top` changes when you change the size of the window i.e. viewport height.
 
-    -Viewport height changes when the user resizes the window, so this needs to be obtained dynamically instead of being hard-coded. This is done through the clientHeight property:\
+    * Viewport height changes when the user resizes the window, so this needs to be obtained dynamically instead of being hard-coded. This is done through the clientHeight property:\
 
     ```js
      let viewport_height = document.querySelector("html").clientHeight;
      ```
 
-    -The height of the content is independent of the size of the viewport - it is always composed of all the heights of all the children elements. This property is named `scrollHeight` (honestly, I was initially confused):
+    * The height of the content is independent of the size of the viewport - it is always composed of all the heights of all the children elements. This property is named `scrollHeight` (honestly, I was initially confused):
 
     ```js
     let content_height = document.querySelector("body").scrollHeight;
