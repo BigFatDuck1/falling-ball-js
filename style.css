@@ -29,3 +29,7 @@
 .fall {
     top: 70vh;
 }
+
+#bottom {
+    background-color: lightgray;
+}
