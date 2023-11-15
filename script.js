@@ -14,7 +14,7 @@ document.addEventListener('scroll', function() {
     //console.log(`scrollTop: ${scroll_top}`);
     let max_scrollTop = content_height - viewport_height;
     //Reached bottom
-    if (scroll_top == max_scrollTop) {
+    if (scroll_top == max_scrollTop || scroll_top == max_scrollTop - 5) {
         console.log("Bottom of page");
         document.querySelector(".ball").classList.add("fall");        
     }   
