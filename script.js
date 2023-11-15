@@ -14,12 +14,12 @@ document.addEventListener('scroll', function() {
     //console.log(`scrollTop: ${scroll_top}`);
     let max_scrollTop = content_height - viewport_height;
     //Reached bottom
-    if (scroll_top == max_scrollTop || scroll_top == max_scrollTop - 5) {
+    if (scroll_top == max_scrollTop || max_scrollTop - 1 == scroll_top) {
         console.log("Bottom of page");
         document.querySelector(".ball").classList.add("fall");        
     }   
     //If scrolling back up
-    if (scroll_top < max_scrollTop) {
+    if (scroll_top < max_scrollTop - 5) {
         document.querySelector(".ball").classList.remove("fall");
         document.querySelector(".ball").textContent = "🏀";
     }
